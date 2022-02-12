@@ -164,8 +164,13 @@ img {
 }
 .team-item {
   background-color: var(--color-bgd-main);
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -192,6 +197,7 @@ img {
 }
 .adress {
   font-style: normal;
+  margin-top: 20px;
 }
 .adress-location {
   font-size: 14px;
@@ -217,6 +223,9 @@ img {
 
 /* ==========START PORTFOLIO========== */
 .filters-btn {
+  padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   font-family: var(--font-family-main);
   font-weight: 500;
   font-size: 16px;
@@ -236,6 +245,8 @@ img {
 .drafts-item {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  margin-left: 30px;
+  flex-basis: calc((100% - 30px) / 3);
 }
 .drafts-title {
   font-weight: 700;
@@ -252,14 +263,18 @@ img {
 /* ==========END PORTFOLIO========== */
 
 /* ==========START FLEXBOX========== */
-
-/* ========== START FLEX HEADER ========== */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
+/* ========== START FLEX HEADER ========== */
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -303,10 +318,6 @@ img {
 }
 /* ========== END FLEX HERO ========== */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 /* ========== START FLEX FEATURES ========== */
 .hidden-title {
   display: none;
@@ -328,4 +339,45 @@ img {
 }
 .activity.section {
   padding-top: 0px;
+}
+/* ========== STAR FLEX TEAM ========== */
+
+.team-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-item-foot {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+/* ========== START FLEX FOOTER ========== */
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.adress-item {
+  margin-bottom: 9px;
+}
+.adress-item:last-child {
+  margin-bottom: 0px;
+}
+/* ========== START FLEX PORTFOLIO ==========*/
+.filters-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filters-item {
+  margin-right: 8px;
+}
+.drafts-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -30px;
 }
