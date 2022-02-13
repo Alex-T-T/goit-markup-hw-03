@@ -36,6 +36,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -243,12 +245,11 @@ img {
   color: var(--color-logo-dark-bgd);
 }
 .drafts-item {
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
   box-sizing: border-box;
-  margin-left: 30px;
-  flex-basis: calc((100% - 30px) / 3);
 }
 .drafts-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -348,8 +349,11 @@ img {
 }
 .team-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-left: -30px;
+}
+.team-item:last-child {
+  margin-right: 0px;
 }
 .team-item-foot {
   margin-top: 30px;
@@ -371,13 +375,28 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 .filters-item {
   margin-right: 8px;
 }
+.filters-item:last-child {
+  margin-right: 0px;
+}
 .drafts-list {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   margin-left: -30px;
+  margin-top: -30px;
+}
+.drafts-item {
+  /* flex-basis: calc((100% - 3 * 30px) / 3)
+  если применить это свойствоб то тогда border-right под картинкой не совпадает с размером картинки; */
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.drafts-box {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
