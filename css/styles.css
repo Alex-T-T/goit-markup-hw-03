@@ -166,7 +166,8 @@ img {
 }
 .team-item {
   background-color: var(--color-bgd-main);
-  margin-right: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -326,6 +327,7 @@ img {
 }
 .features-list {
   display: flex;
+  margin-left: -30px;
 }
 .features-item {
   margin-left: 30px;
@@ -335,23 +337,15 @@ img {
 .activity-list {
   display: flex;
   justify-content: space-between;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 .activity.section {
   padding-top: 0px;
 }
 /* ========== STAR FLEX TEAM ========== */
 
-.team-container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .team-list {
   display: flex;
-}
-.team-item:last-child {
-  margin-right: 0px;
+  margin-left: -30px;
 }
 .team-item-foot {
   margin-top: 30px;
