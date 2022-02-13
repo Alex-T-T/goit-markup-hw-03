@@ -325,18 +325,17 @@ img {
 }
 .features-list {
   display: flex;
-  align-items: center;
-  margin-left: -30px;
 }
 .features-item {
   margin-left: 30px;
-  flex-basis: calc((100% - 30px) / 4);
+  flex-basis: calc((100% - 120px) / 4);
 }
 /* ========== START FLEX ACTIVITY ========== */
 .activity-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .activity.section {
   padding-top: 0px;
@@ -349,8 +348,6 @@ img {
 }
 .team-list {
   display: flex;
-  align-items: center;
-  margin-left: -30px;
 }
 .team-item:last-child {
   margin-right: 0px;
@@ -390,8 +387,8 @@ img {
   margin-top: -30px;
 }
 .drafts-item {
-  /* flex-basis: calc((100% - 3 * 30px) / 3)
-  если применить это свойствоб то тогда border-right под картинкой не совпадает с размером картинки; */
+  /* flex-basis: calc((100% - 3 * 30px) / 3);
+если применить это свойствоб то тогда border-right под картинкой не совпадает с размером картинки;  */
   margin-left: 30px;
   margin-top: 30px;
 }
